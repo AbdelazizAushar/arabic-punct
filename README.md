@@ -85,13 +85,13 @@ We unlocked a project-high **Macro F1 score of 76.86%**, allowing the model to c
 
 ## 👤 Authors
 
-|                                                Avatar                                                | Name                 | GitHub                | Role / Contribution |
-| :--------------------------------------------------------------------------------------------------: | :------------------- | :-------------------- | :------------------ |
-| <img src="https://github.com/AbdelazizAushar.png" width="45" height="45" style="border-radius:50%">  | **Abdelaziz Aushar** | @your_github_username | Core Developer      |
-|   <img src="https://github.com/HamzaTinawi8.png" width="45" height="45" style="border-radius:50%">   | **Hamza Tinawi**     | @HamzaTinawi8         | Core Developer      |
-| <img src="https://github.com/MahmoudMMohammed.png" width="45" height="45" style="border-radius:50%"> | **Mahmoud Mohammad** | @MahmoudMMohammed     | Core Developer      |
-|    <img src="https://github.com/saranajati.png" width="45" height="45" style="border-radius:50%">    | **Sara Najati**      | @saranajati           | Core Developer      |
-|    <img src="https://github.com/Tima-Dawwa.png" width="45" height="45" style="border-radius:50%">    | **Tima Dawwa**       | @Tima-Dawwa           | Core Developer      |
+|                                                Avatar                                                | Name                 | GitHub            | Role / Contribution |
+| :--------------------------------------------------------------------------------------------------: | :------------------- | :---------------- | :------------------ |
+| <img src="https://github.com/AbdelazizAushar.png" width="45" height="45" style="border-radius:50%">  | **Abdelaziz Aushar** | @AbdelazizAushar  | Core Developer      |
+|   <img src="https://github.com/HamzaTinawi8.png" width="45" height="45" style="border-radius:50%">   | **Hamza Tinawi**     | @HamzaTinawi8     | Core Developer      |
+| <img src="https://github.com/MahmoudMMohammed.png" width="45" height="45" style="border-radius:50%"> | **Mahmoud Mohammad** | @MahmoudMMohammed | Core Developer      |
+|    <img src="https://github.com/saranajati.png" width="45" height="45" style="border-radius:50%">    | **Sara Najati**      | @saranajati       | Core Developer      |
+|    <img src="https://github.com/Tima-Dawwa.png" width="45" height="45" style="border-radius:50%">    | **Tima Dawwa**       | @Tima-Dawwa       | Core Developer      |
 
 Created as coursework for NLP class in Damascus University
 December 2025
