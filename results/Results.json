@@ -1,0 +1,75 @@
+{
+  "number_step": 1,
+  "name_model": "AraELECTRA",
+  "features": {
+    "type": "Transformer Token Classification",
+    "model_name": "aubmindlab/araelectra-base-discriminator",
+    "tuning_strategy": "Full Fine-Tuning",
+    "trainable_params": 199,
+    "total_params": 199
+  },
+  "parameters_model": {
+    "lr": 2e-5,
+    "epochs": 1,
+    "batch_size_train": 64,
+    "batch_size_eval": 128,
+    "gradient_accumulation": 2,
+    "eval_and_save_step": 5000,
+    "weight_decay": 0.01,
+    "warmup_steps": 0.1,
+    "loss_function": "Weighted CrossEntropyLoss",
+    "max_seq_len": 256,
+    "stride": 64,
+    "fp16": false,
+    "bf16": true,
+    "early_stopping_patience": 1,
+    "dataloader_num_workers": 16,
+    "dataloader_pin_memory": true,
+    "torch_compile": true,
+    "group_by_length": true,
+    "class_weights_clamped_max": {
+      "Class 0": { "before": 0.16, "after": 0.15708 },
+      "Class 1": { "before": 3.03, "after": 3.0308 },
+      "Class 2": { "before": 30.4, "after": 30.405 },
+      "Class 3": { "before": 3.89, "after": 3.8871 },
+      "Class 4": { "before": 862.06, "after": 862.06 },
+      "Class 5": { "before": 65949.82, "after": 10000.0 },
+      "Class 6": { "before": 80.62, "after": 80.617 }
+    }
+  },
+  "methods_preprocessing": {
+    "text_cleaning": [
+      "URL Masking",
+      "Unicode Normalization (Alef/Yeh)",
+      "Diacritics Removal (Tashkeel)",
+      "Tatweel/Kashida Removal",
+      "Punctuation Spacing Normalization"
+    ],
+    "segmentation": [
+      "Hybrid Splitting (Strong Punctuation)",
+      "Max Words Hard Limit (80)",
+      "Forced Split on Overflow (45)"
+    ],
+    "tokenization": [
+      "Subword Tokenization (WordPiece/SentencePiece)",
+      "First-Subword Label Alignment",
+      "Sliding Window (Stride)",
+      "-100 Label Masking (for padding/non-first subwords)"
+    ],
+    "data_sampling": {
+      "strategy": "Stratified",
+      "validation_subset_strategy": "Full validation set",
+      "number_of_rare_classes_for_test_and_val": {
+        "Class !": "(35/750)",
+        "Class ?": "(1500/53000)",
+        "Class :": "(15000/570000)",
+        "Class ;": "(40000/1500000)"
+      }
+    }
+  },
+  "accuracy": 0.941543047641886,
+  "F-score": {
+    "macro": 0.7685581073808041,
+    "weighted": 0.9507063870635212
+  }
+}
